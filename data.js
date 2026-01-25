@@ -21,7 +21,7 @@ const sections = {
     label: "adjektiv",
     words: ["snabbt", "roligt", "varmt", "tyst", "noggrant"]
   },
-  E: {
+  F: {
     label: "Ny del",
     words: ["test", "test2"]
   }
@@ -32,4 +32,5 @@ const sections = {
   Lägg till ny sektion så här:
   F: { label: "...", words: [...] }
 */
+
 
