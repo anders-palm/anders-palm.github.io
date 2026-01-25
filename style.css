@@ -1,0 +1,192 @@
+/* Kontekst för ChatGPT: Denna fil är del av en undervisningswebbsida för DNA/meningsbygge. 
+   Knappar A1-E5, logiska meningar, lätt att redigera ord/antal knappar, liten animation. */
+
+:root {
+    --section-colors: #4e79a7, #f28e2b, #e15759, #76b7b2, #59a14f, #af7aa1, #ffb955, #b07c6e, #9c755f, #bab0ac;
+    --color-neutral: #222;
+    --btn-radius: 8px;
+    --btn-size: 2.2em;
+    --transition: 0.25s;
+    --section-gap: 0.4em;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7f7;
+    color: var(--color-neutral);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 100vw;
+    width: 95vw;
+    margin: 2em auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 2em 1em;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+}
+
+#sections-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--section-gap);
+    margin-bottom: 2em;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--section-gap);
+    width: fit-content;
+}
+
+
+.section-label {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: var(--section-gap);
+}
+
+button.section-btn {
+    width: var(--btn-size);
+    height: var(--btn-size);
+    border-radius: var(--btn-radius);
+    border: none;
+    background: #eee;
+    color: var(--color-neutral);
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background var(--transition), color var(--transition);
+    outline: none;
+    margin: 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+button.section-btn[data-section="A"], .btn-A {
+    border: 2px solid var(--color-A);
+}
+button.section-btn[data-section="B"], .btn-B {
+    border: 2px solid var(--color-B);
+}
+button.section-btn[data-section="C"], .btn-C {
+    border: 2px solid var(--color-C);
+}
+button.section-btn[data-section="D"], .btn-D {
+    border: 2px solid var(--color-D);
+}
+button.section-btn[data-section="E"], .btn-E {
+    border: 2px solid var(--color-E);
+}
+
+button.section-btn.selected {
+    color: #fff;
+}
+button.section-btn.selected[data-section="A"], .btn-A.selected {
+    background: var(--color-A);
+}
+button.section-btn.selected[data-section="B"], .btn-B.selected {
+    background: var(--color-B);
+}
+button.section-btn.selected[data-section="C"], .btn-C.selected {
+    background: var(--color-C);
+}
+button.section-btn.selected[data-section="D"], .btn-D.selected {
+    background: var(--color-D);
+}
+button.section-btn.selected[data-section="E"], .btn-E.selected {
+    background: var(--color-E);
+}
+
+button.section-btn:not(.selected) {
+    background: #eee;
+    color: var(--color-neutral);
+}
+button.section-btn:not(.selected):hover {
+    filter: brightness(0.97);
+}
+button.section-btn {
+    transition: background var(--transition), color var(--transition), filter var(--transition);
+}
+
+#result-container {
+    margin-top: 1.5em;
+    text-align: center;
+}
+#result-label {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    color: #666;
+}
+#result-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    min-height: 2.5em;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    align-items: center;
+}
+.result-box {
+    min-width: 2.5em;
+    padding: 0.5em 0.7em;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: var(--btn-radius);
+    margin: 0;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--transition);
+}
+.result-box.A { background: var(--color-A); }
+.result-box.B { background: var(--color-B); }
+.result-box.C { background: var(--color-C); }
+.result-box.D { background: var(--color-D); }
+.result-box.E { background: var(--color-E); }
+
+@media (max-width: 600px) {
+    #sections-container {
+        flex-direction: column;
+        gap: var(--section-gap);
+        align-items: stretch;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: var(--section-gap);
+    }
+    main {
+        padding: 1em 0.3em;
+        width: 99vw;
+        max-width: 100vw;
+    }
+}
