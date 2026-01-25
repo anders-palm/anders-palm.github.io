@@ -1,4 +1,4 @@
-/* Kontekst för ChatGPT: Denna fil är del av en undervisningswebbsida för DNA/meningsbygge. */
+/* Kontexst för ChatGPT: Denna fil är del av en undervisningswebbsida för DNA/meningsbygge. */
 
 const sections = {
   A: {
@@ -10,14 +10,18 @@ const sections = {
     words: ["springer", "hoppar", "läser", "skrattar", "talar"]
   },
   C: {
+    label: "räkneord",
+    words: ["en", "ett", "två", "tre", "fyra"]
+  },
+  D: {
     label: "adjektiv",
     words: ["fort", "högt", "tyst", "glatt", "noggrant"]
   },
-  D: {
+  E: {
     label: "konjunktion",
     words: ["och", "eller", "men"]
   },
-  E: {
+  F: {
     label: "adjektiv",
     words: ["snabbt", "roligt", "varmt", "tyst", "noggrant"]
   }
@@ -28,6 +32,7 @@ const sections = {
   Lägg till ny sektion så här:
   F: { label: "...", words: [...] }
 */
+
 
 
 
