@@ -24,6 +24,10 @@ const sections = {
   F: {
     label: "adjektiv",
     words: ["snabbt", "roligt", "varmt", "tyst", "noggrant"]
+  },
+  G: {
+    label: "adjektiv",
+    words: ["bil", "cykel", "grop", "vägg", "planka"]
   }
 };
 
@@ -32,6 +36,7 @@ const sections = {
   Lägg till ny sektion så här:
   F: { label: "...", words: [...] }
 */
+
 
 
 
