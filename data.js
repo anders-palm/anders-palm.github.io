@@ -3,11 +3,11 @@
 const sections = {
   A: {
     label: "pronomen",
-    words: ["Han", "Hon", "Hunden", "Vi", "Du"]
+    words: ["Han", "Hon", "Den", "Det", "De"]
   },
   B: {
     label: "verb",
-    words: ["springer", "slår", "cyklar", "biter", "talar"]
+    words: ["springer", "knarkar", "cyklar", "biter", "letar"]
   },
   C: {
     label: "räkneord",
@@ -15,19 +15,19 @@ const sections = {
   },
   D: {
     label: "adjektiv",
-    words: ["fort", "stor", "tyst", "glatt", "noggrant"]
+    words: ["blåa", "stor", "tyst", "glatt", "noggrant"]
   },
   E: {
     label: "konjunktion",
-    words: ["och", "eller", "men"]
+    words: ["och", "eller", "men", "i"]
   },
   F: {
     label: "adjektiv",
-    words: ["blå", "roligt", "varmt", "rund", "noggrant"]
+    words: ["små", "roligt", "varmt", "rund", "noggrant"]
   },
   G: {
     label: "substantiv",
-    words: ["rundor", "cykel", "grop", "vägg", "stol"]
+    words: ["pennor", "pinnar", "cyklar", "varv", "joint", "fickan]
   }
 };
 
@@ -36,6 +36,7 @@ const sections = {
   Lägg till ny sektion så här:
   F: { label: "...", words: [...] }
 */
+
 
 
 
