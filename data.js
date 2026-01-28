@@ -27,7 +27,7 @@ const sections = {
   },
   G: {
     label: "substantiv",
-    words: ["pennor", "pinnar", "cyklar", "varv", "joint", "fickan"
+    words: ["pennor", "pinnar", "cyklar", "varv", "joint", "fickan"]
   }
 };
 
@@ -36,6 +36,7 @@ const sections = {
   Lägg till ny sektion så här:
   F: { label: "...", words: [...] }
 */
+
 
 
 
